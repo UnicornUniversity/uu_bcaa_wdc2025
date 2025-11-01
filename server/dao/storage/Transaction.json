@@ -7,5 +7,14 @@
     "categoryId": "0e16b70bf887420e",
     "cts": "2025-11-01T10:22:46.529Z",
     "id": "132fabc2ad3b9c9a"
+  },
+  {
+    "counterparty": "Lékárna",
+    "amount": -800,
+    "date": "2025-11-01",
+    "note": "vitamíny",
+    "categoryId": "71518d7de8cced63",
+    "cts": "2025-11-01T16:58:32.475Z",
+    "id": "8e8603e7e61aafcf"
   }
 ]
