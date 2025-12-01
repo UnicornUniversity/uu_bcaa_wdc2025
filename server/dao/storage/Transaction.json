@@ -4,7 +4,7 @@
     "amount": 3000,
     "date": "2025-10-10",
     "note": "benzín 36l",
-    "categoryId": "0e16b70bf887420e",
+    "categoryId": "78fb937258df7e26",
     "cts": "2025-11-01T10:22:46.529Z",
     "id": "132fabc2ad3b9c9a"
   },
@@ -16,5 +16,545 @@
     "categoryId": "71518d7de8cced63",
     "cts": "2025-11-01T16:58:32.475Z",
     "id": "8e8603e7e61aafcf"
+  },
+  {
+    "counterparty": "Tesco",
+    "amount": -2450,
+    "date": "2025-10-01",
+    "note": "nákup potravin",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-01T18:30:15.123Z",
+    "id": "a1b2c3d4e5f6g7h8"
+  },
+  {
+    "counterparty": "Albert",
+    "amount": -1890,
+    "date": "2025-10-02",
+    "note": "týdenní nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-02T14:22:33.456Z",
+    "id": "b2c3d4e5f6g7h8i9"
+  },
+  {
+    "counterparty": "Shell",
+    "amount": 2850,
+    "date": "2025-10-03",
+    "note": "nafta 32l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-10-03T09:15:42.789Z",
+    "id": "c3d4e5f6g7h8i9j0"
+  },
+  {
+    "counterparty": "Restaurace U Zlatého lva",
+    "amount": -1250,
+    "date": "2025-10-05",
+    "note": "oběd s kolegy",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-05T13:20:55.345Z",
+    "id": "e5f6g7h8i9j0k1l2"
+  },
+  {
+    "counterparty": "Lidl",
+    "amount": -1650,
+    "date": "2025-10-06",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-06T11:30:18.678Z",
+    "id": "f6g7h8i9j0k1l2m3"
+  },
+  {
+    "counterparty": "ČSOB",
+    "amount": 45000,
+    "date": "2025-10-07",
+    "note": "platba mzdy",
+    "categoryId": "535f04b8098940cc",
+    "cts": "2025-10-07T08:00:00.000Z",
+    "id": "g7h8i9j0k1l2m3n4"
+  },
+  {
+    "counterparty": "OMV",
+    "amount": 3100,
+    "date": "2025-10-08",
+    "note": "benzín 38l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-10-08T17:25:44.901Z",
+    "id": "h8i9j0k1l2m3n4o5"
+  },
+  {
+    "counterparty": "Pizza Hut",
+    "amount": -890,
+    "date": "2025-10-09",
+    "note": "večeře",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-09T19:40:27.234Z",
+    "id": "i9j0k1l2m3n4o5p6"
+  },
+  {
+    "counterparty": "Globus",
+    "amount": -2100,
+    "date": "2025-10-11",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-11T15:10:50.567Z",
+    "id": "j0k1l2m3n4o5p6q7"
+  },
+  {
+    "counterparty": "Kino Světozor",
+    "amount": -450,
+    "date": "2025-10-12",
+    "note": "vstupenky",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-12T20:15:13.890Z",
+    "id": "k1l2m3n4o5p6q7r8"
+  },
+  {
+    "counterparty": "Tesco",
+    "amount": -1980,
+    "date": "2025-10-13",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-13T12:35:36.123Z",
+    "id": "l2m3n4o5p6q7r8s9"
+  },
+  {
+    "counterparty": "Shell",
+    "amount": 2750,
+    "date": "2025-10-14",
+    "note": "nafta 30l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-10-14T10:50:59.456Z",
+    "id": "m3n4o5p6q7r8s9t0"
+  },
+  {
+    "counterparty": "Lékárna Dr. Max",
+    "amount": -650,
+    "date": "2025-10-15",
+    "note": "léky",
+    "categoryId": "71518d7de8cced63",
+    "cts": "2025-10-15T14:25:22.789Z",
+    "id": "n4o5p6q7r8s9t0u1"
+  },
+  {
+    "counterparty": "Starbucks",
+    "amount": -320,
+    "date": "2025-10-16",
+    "note": "káva",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-16T08:40:45.012Z",
+    "id": "o5p6q7r8s9t0u1v2"
+  },
+  {
+    "counterparty": "Albert",
+    "amount": -1750,
+    "date": "2025-10-17",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-17T16:55:08.345Z",
+    "id": "p6q7r8s9t0u1v2w3"
+  },
+  {
+    "counterparty": "OMV",
+    "amount": 2950,
+    "date": "2025-10-18",
+    "note": "benzín 35l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-10-18T11:20:31.678Z",
+    "id": "q7r8s9t0u1v2w3x4"
+  },
+  {
+    "counterparty": "McDonald's",
+    "amount": -580,
+    "date": "2025-10-19",
+    "note": "oběd",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-19T13:05:54.901Z",
+    "id": "r8s9t0u1v2w3x4y5"
+  },
+  {
+    "counterparty": "Kaufland",
+    "amount": -2900,
+    "date": "2025-10-20",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-20T18:30:17.234Z",
+    "id": "s9t0u1v2w3x4y5z6"
+  },
+  {
+    "counterparty": "Tesco",
+    "amount": -2200,
+    "date": "2025-10-21",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-21T15:45:40.567Z",
+    "id": "t0u1v2w3x4y5z6a7"
+  },
+  {
+    "counterparty": "Shell",
+    "amount": 3200,
+    "date": "2025-10-22",
+    "note": "nafta 35l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-10-22T09:10:03.890Z",
+    "id": "u1v2w3x4y5z6a7b8"
+  },
+  {
+    "counterparty": "Restaurace U Fleku",
+    "amount": -1450,
+    "date": "2025-10-23",
+    "note": "večeře",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-23T19:25:26.123Z",
+    "id": "v2w3x4y5z6a7b8c9"
+  },
+  {
+    "counterparty": "Lidl",
+    "amount": -1550,
+    "date": "2025-10-24",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-24T12:40:49.456Z",
+    "id": "w3x4y5z6a7b8c9d0"
+  },
+  {
+    "counterparty": "OMV",
+    "amount": 3050,
+    "date": "2025-10-25",
+    "note": "benzín 37l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-10-25T17:55:12.789Z",
+    "id": "x4y5z6a7b8c9d0e1"
+  },
+  {
+    "counterparty": "Globus",
+    "amount": -2350,
+    "date": "2025-10-26",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-26T14:15:35.012Z",
+    "id": "y5z6a7b8c9d0e1f2"
+  },
+  {
+    "counterparty": "KFC",
+    "amount": -720,
+    "date": "2025-10-27",
+    "note": "oběd",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-27T13:30:58.345Z",
+    "id": "z6a7b8c9d0e1f2g3"
+  },
+  {
+    "counterparty": "Albert",
+    "amount": -1680,
+    "date": "2025-10-28",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-28T11:45:21.678Z",
+    "id": "a7b8c9d0e1f2g3h4"
+  },
+  {
+    "counterparty": "Shell",
+    "amount": 2800,
+    "date": "2025-10-29",
+    "note": "nafta 31l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-10-29T16:00:44.901Z",
+    "id": "b8c9d0e1f2g3h4i5"
+  },
+  {
+    "counterparty": "Tesco",
+    "amount": -2050,
+    "date": "2025-10-30",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-10-30T15:20:07.234Z",
+    "id": "c9d0e1f2g3h4i5j6"
+  },
+  {
+    "counterparty": "OMV",
+    "amount": 3100,
+    "date": "2025-10-31",
+    "note": "benzín 38l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-10-31T10:35:30.567Z",
+    "id": "d0e1f2g3h4i5j6k7"
+  },
+  {
+    "counterparty": "Kaufland",
+    "amount": -2550,
+    "date": "2025-11-02",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-02T14:50:53.890Z",
+    "id": "e1f2g3h4i5j6k7l8"
+  },
+  {
+    "counterparty": "Shell",
+    "amount": 2900,
+    "date": "2025-11-03",
+    "note": "nafta 33l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-11-03T09:05:16.123Z",
+    "id": "f2g3h4i5j6k7l8m9"
+  },
+  {
+    "counterparty": "Restaurace U Dvou koček",
+    "amount": -1350,
+    "date": "2025-11-04",
+    "note": "oběd",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-04T12:20:39.456Z",
+    "id": "g3h4i5j6k7l8m9n0"
+  },
+  {
+    "counterparty": "Lidl",
+    "amount": -1720,
+    "date": "2025-11-05",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-05T17:35:02.789Z",
+    "id": "h4i5j6k7l8m9n0o1"
+  },
+  {
+    "counterparty": "OMV",
+    "amount": 3000,
+    "date": "2025-11-06",
+    "note": "benzín 36l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-11-06T11:50:25.012Z",
+    "id": "i5j6k7l8m9n0o1p2"
+  },
+  {
+    "counterparty": "Tesco",
+    "amount": -1920,
+    "date": "2025-11-07",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-07T15:05:48.345Z",
+    "id": "j6k7l8m9n0o1p2q3"
+  },
+  {
+    "counterparty": "ČSOB",
+    "amount": 45000,
+    "date": "2025-11-08",
+    "note": "platba mzdy",
+    "categoryId": "535f04b8098940cc",
+    "cts": "2025-11-08T08:00:00.000Z",
+    "id": "k7l8m9n0o1p2q3r4"
+  },
+  {
+    "counterparty": "Shell",
+    "amount": 2750,
+    "date": "2025-11-09",
+    "note": "nafta 30l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-11-09T10:20:11.678Z",
+    "id": "l8m9n0o1p2q3r4s5"
+  },
+  {
+    "counterparty": "Pizza Hut",
+    "amount": -950,
+    "date": "2025-11-10",
+    "note": "večeře",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-10T19:35:34.901Z",
+    "id": "m9n0o1p2q3r4s5t6"
+  },
+  {
+    "counterparty": "Albert",
+    "amount": -1850,
+    "date": "2025-11-11",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-11T13:50:57.234Z",
+    "id": "n0o1p2q3r4s5t6u7"
+  },
+  {
+    "counterparty": "OMV",
+    "amount": 3150,
+    "date": "2025-11-12",
+    "note": "benzín 39l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-11-12T09:05:20.567Z",
+    "id": "o1p2q3r4s5t6u7v8"
+  },
+  {
+    "counterparty": "Globus",
+    "amount": -2250,
+    "date": "2025-11-13",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-13T16:20:43.890Z",
+    "id": "p2q3r4s5t6u7v8w9"
+  },
+  {
+    "counterparty": "Starbucks",
+    "amount": -350,
+    "date": "2025-11-14",
+    "note": "káva",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-14T08:35:06.123Z",
+    "id": "q3r4s5t6u7v8w9x0"
+  },
+  {
+    "counterparty": "Kaufland",
+    "amount": -3100,
+    "date": "2025-11-15",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-15T14:50:29.456Z",
+    "id": "r4s5t6u7v8w9x0y1"
+  },
+  {
+    "counterparty": "Shell",
+    "amount": 2850,
+    "date": "2025-11-16",
+    "note": "nafta 32l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-11-16T11:05:52.789Z",
+    "id": "s5t6u7v8w9x0y1z2"
+  },
+  {
+    "counterparty": "Lékárna",
+    "amount": -750,
+    "date": "2025-11-17",
+    "note": "léky",
+    "categoryId": "71518d7de8cced63",
+    "cts": "2025-11-17T15:20:15.012Z",
+    "id": "t6u7v8w9x0y1z2a3"
+  },
+  {
+    "counterparty": "Tesco",
+    "amount": -2080,
+    "date": "2025-11-18",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-18T12:35:38.345Z",
+    "id": "u7v8w9x0y1z2a3b4"
+  },
+  {
+    "counterparty": "OMV",
+    "amount": 3050,
+    "date": "2025-11-19",
+    "note": "benzín 37l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-11-19T17:50:01.678Z",
+    "id": "v8w9x0y1z2a3b4c5"
+  },
+  {
+    "counterparty": "McDonald's",
+    "amount": -620,
+    "date": "2025-11-20",
+    "note": "oběd",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-20T13:05:24.901Z",
+    "id": "w9x0y1z2a3b4c5d6"
+  },
+  {
+    "counterparty": "Lidl",
+    "amount": -1620,
+    "date": "2025-11-21",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-21T18:20:47.234Z",
+    "id": "x0y1z2a3b4c5d6e7"
+  },
+  {
+    "counterparty": "Shell",
+    "amount": 2950,
+    "date": "2025-11-22",
+    "note": "nafta 34l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-11-22T10:35:10.567Z",
+    "id": "y1z2a3b4c5d6e7f8"
+  },
+  {
+    "counterparty": "Restaurace U Zlatého lva",
+    "amount": -1280,
+    "date": "2025-11-23",
+    "note": "oběd",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-23T14:50:33.890Z",
+    "id": "z2a3b4c5d6e7f8g9"
+  },
+  {
+    "counterparty": "Albert",
+    "amount": -1780,
+    "date": "2025-11-24",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-24T11:05:56.123Z",
+    "id": "a3b4c5d6e7f8g9h0"
+  },
+  {
+    "counterparty": "OMV",
+    "amount": 3000,
+    "date": "2025-11-25",
+    "note": "benzín 36l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-11-25T16:20:19.456Z",
+    "id": "b4c5d6e7f8g9h0i1"
+  },
+  {
+    "counterparty": "Globus",
+    "amount": -2400,
+    "date": "2025-11-26",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-26T13:35:42.789Z",
+    "id": "c5d6e7f8g9h0i1j2"
+  },
+  {
+    "counterparty": "KFC",
+    "amount": -680,
+    "date": "2025-11-27",
+    "note": "oběd",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-27T19:50:05.012Z",
+    "id": "d6e7f8g9h0i1j2k3"
+  },
+  {
+    "counterparty": "Kaufland",
+    "amount": -2750,
+    "date": "2025-11-28",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-28T15:05:28.345Z",
+    "id": "e7f8g9h0i1j2k3l4"
+  },
+  {
+    "counterparty": "Shell",
+    "amount": 2800,
+    "date": "2025-11-29",
+    "note": "nafta 31l",
+    "categoryId": "78fb937258df7e26",
+    "cts": "2025-11-29T10:20:51.678Z",
+    "id": "f8g9h0i1j2k3l4m5"
+  },
+  {
+    "counterparty": "Tesco",
+    "amount": -1950,
+    "date": "2025-11-30",
+    "note": "nákup",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-30T17:35:14.901Z",
+    "id": "g9h0i1j2k3l4m5n6"
+  },
+  {
+    "counterparty": "KB",
+    "amount": 300,
+    "date": "2025-11-28",
+    "note": "poplatky",
+    "categoryId": "0e16b70bf887420e",
+    "cts": "2025-11-29T17:22:38.929Z",
+    "id": "f3c5068cbbe93976"
+  },
+  {
+    "counterparty": "Oční kapky",
+    "amount": 399,
+    "date": "2025-11-21",
+    "note": "",
+    "categoryId": "71518d7de8cced63",
+    "cts": "2025-11-29T17:44:09.156Z",
+    "id": "fe9e8f157ea2e7b6"
   }
 ]

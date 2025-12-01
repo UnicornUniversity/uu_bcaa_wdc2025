@@ -1,70 +1,244 @@
-# Getting Started with Create React App
+# Transaction Management Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React-based frontend application for managing financial transactions and categories.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This is a single-page application built with React that provides a user interface for:
+- Viewing a list of transactions
+- Creating new transactions
+- Updating existing transactions
+- Managing transaction categories
 
-### `npm start`
+## Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React 19.2.0** - UI library
+- **React Bootstrap 2.10.10** - UI components
+- **Bootstrap 5.3.8** - CSS framework
+- **Material Design Icons** - Icon library (@mdi/react, @mdi/js)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+```
+client/
+├── public/              # Static files
+├── src/
+│   ├── App.js          # Main application component
+│   ├── Header.js       # Header component with refresh and create buttons
+│   ├── TransactionList.js      # Main transaction list view
+│   ├── Transaction.js         # Individual transaction card component
+│   ├── TransactionModal.js    # Modal form for create/update transactions
+│   ├── TransactionListProvider.js  # Context provider for transaction data
+│   ├── CategoryListProvider.js     # Context provider for category data
+│   └── index.js        # Application entry point
+└── package.json
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Components
 
-### `npm run build`
+### App.js
+Root component that sets up the provider hierarchy:
+- `TransactionListProvider` - Manages transaction state and API calls
+- `CategoryListProvider` - Manages category state and API calls
+- `TransactionList` - Main view component
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Header.js
+Displays the page header with:
+- Page title
+- Current time display
+- Refresh button (reloads transaction list)
+- "Nová transakce" button (opens create modal)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### TransactionList.js
+Main container component that:
+- Manages modal state (show/hide, selected transaction)
+- Renders the list of transactions
+- Handles loading and error states
+- Passes edit handlers to Transaction components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Transaction.js
+Displays individual transaction cards with:
+- Counterparty name
+- Transaction date (formatted in Czech locale)
+- Amount (formatted in Czech locale)
+- Category name
+- Edit button (pencil icon)
 
-### `npm run eject`
+### TransactionModal.js
+Reusable modal form component that works for both:
+- **Create mode**: Opens with empty form when creating new transaction
+- **Edit mode**: Opens with pre-filled form when editing existing transaction
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Form Fields:**
+- `counterparty` (required, max 150 chars) - Transaction counterparty
+- `amount` (required, number) - Transaction amount (positive or negative)
+- `date` (required, date) - Transaction date (must be today or in the past)
+- `categoryId` (required, select) - Category selection dropdown
+- `note` (optional, max 250 chars) - Additional notes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Features:**
+- Form validation
+- Error message display
+- Loading states during submission
+- Auto-refreshes transaction list after successful save
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### TransactionListProvider.js
+React Context provider that manages:
+- Transaction data state
+- Loading/error states
+- API communication methods:
+  - `fetchTransactions()` - GET /transaction/list
+  - `createTransaction(data)` - POST /transaction/create
+  - `updateTransaction(data)` - POST /transaction/update
+  - `deleteTransaction(id)` - POST /transaction/delete
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Usage:**
+```javascript
+import { useTransactionList } from './TransactionListProvider';
 
-## Learn More
+function MyComponent() {
+  const { data, status, error, handlerMap } = useTransactionList();
+  
+  // Access transaction list
+  const transactions = data;
+  
+  // Check loading state
+  if (status === 'loading') { ... }
+  
+  // Call API methods
+  await handlerMap.createTransaction({ ... });
+}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### CategoryListProvider.js
+React Context provider that manages:
+- Category data state
+- Category map for quick lookups
+- API communication methods for categories
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Usage:**
+```javascript
+import { useCategoryList } from './CategoryListProvider';
 
-### Code Splitting
+function MyComponent() {
+  const { data, categoryMap } = useCategoryList();
+  
+  // Access category list
+  const categories = data;
+  
+  // Lookup category by ID
+  const category = categoryMap[categoryId];
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Getting Started
 
-### Analyzing the Bundle Size
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Installation
 
-### Making a Progressive Web App
+1. Navigate to the client directory:
+```bash
+cd client
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Install dependencies:
+```bash
+npm install
+```
 
-### Advanced Configuration
+### Running the Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Start the development server:
+```bash
+npm start
+```
 
-### Deployment
+The application will open at [http://localhost:3000](http://localhost:3000)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Note:** The client is configured to proxy API requests to `http://localhost:8000` (see `package.json`). Make sure the server is running on port 8000.
 
-### `npm run build` fails to minify
+### Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (one-way operation)
+
+## API Integration
+
+The client communicates with the backend server through the following endpoints:
+
+### Transaction Endpoints
+- `GET /transaction/list` - Fetch all transactions
+- `POST /transaction/create` - Create new transaction
+- `POST /transaction/update` - Update existing transaction
+- `POST /transaction/delete` - Delete transaction
+
+### Category Endpoints
+- `GET /category/list` - Fetch all categories
+- `POST /category/create` - Create new category
+- `POST /category/update` - Update existing category
+- `POST /category/delete` - Delete category
+
+All API requests are automatically proxied to `http://localhost:8000` during development.
+
+## Features
+
+### Transaction Management
+- ✅ View all transactions in a list
+- ✅ Create new transactions via modal form
+- ✅ Edit existing transactions via modal form
+- ✅ Form validation (required fields, date constraints)
+- ✅ Real-time list refresh after create/update
+- ✅ Error handling and display
+- ✅ Loading states
+
+### User Interface
+- ✅ Responsive Bootstrap-based design
+- ✅ Material Design Icons
+- ✅ Czech language interface
+- ✅ Formatted dates and numbers (Czech locale)
+- ✅ Modal dialogs for forms
+- ✅ Loading indicators
+
+## Development Notes
+
+### State Management
+The application uses React Context API for state management:
+- Transaction state is managed by `TransactionListProvider`
+- Category state is managed by `CategoryListProvider`
+- Modal state is managed locally in `TransactionList` component
+
+### Styling
+- Bootstrap 5 is used for base styling
+- React Bootstrap provides React components
+- Custom styles can be added in `App.css` or `index.css`
+
+### Date Handling
+- Dates are stored in ISO format (YYYY-MM-DD)
+- Displayed in Czech locale format
+- Date inputs are restricted to today or past dates (server requirement)
+
+## Troubleshooting
+
+### API Connection Issues
+- Ensure the server is running on port 8000
+- Check that the proxy configuration in `package.json` is correct
+- Verify CORS settings on the server if making direct requests
+
+### Build Issues
+- Clear `node_modules` and reinstall: `rm -rf node_modules && npm install`
+- Clear build cache: `npm start -- --reset-cache`
+
+## Future Enhancements
+
+Potential improvements:
+- Delete transaction functionality in UI
+- Transaction filtering and sorting
+- Date range filtering
+- Category management UI
+- Export functionality
+- Transaction statistics/dashboard
